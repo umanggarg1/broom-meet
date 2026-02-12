@@ -51,7 +51,7 @@ const MeetingCard = ({
         </div>
       </article>
       
-      <article className={cn("flex justify-center relative", {})}>
+      <article className={cn("flex overflow-hidden justify-center relative", {})}>
         
         <div className="relative flex w-full max-sm:hidden">
           
@@ -78,7 +78,7 @@ const MeetingCard = ({
           
           <div className="flex gap-2 p-1 m-1 w-full">
           
-            <Button onClick={handleClick} className="rounded bg-[#0E78F9] px-6">
+            <Button onClick={handleClick} className="rounded cursor-pointer bg-[#0E78F9] px-6">
               {buttonIcon1 && (
                 <Image src={buttonIcon1} alt="feature" width={20} height={20} />
               )}
@@ -92,7 +92,7 @@ const MeetingCard = ({
                   title: "Link Copied",
                 });
               }}
-              className="bg-[#1E2757] px-4"
+              className="bg-[#1E2757] cursor-pointer px-4"
             >
           
               <Image
